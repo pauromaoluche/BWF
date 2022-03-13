@@ -96,9 +96,8 @@ a.desc:after {
 
 /* Edit by dev Pauluci */
 
-
 /* -- section_1 INDEX -- */
-.index .background_menu_index {
+.index .background_menu {
     width: 100%;
     height: 600px;
     background-position: center !important;
@@ -106,13 +105,14 @@ a.desc:after {
     background-size: cover !important;
 }
 
-.index .section1_index {
+.index .section1 {
     padding-top: 40px;
-    background-color: #e7e7e7;
+    /* background-color: #f4f4f4; */
+    background-color: #ececec;
     padding-bottom: 100px;
 }
 
-.index .section1_index .sub_menu ul {
+.index .section1 .sub_menu ul {
     padding: 0;
     list-style: none;
     display: flex;
@@ -122,34 +122,34 @@ a.desc:after {
     margin: 0;
 }
 
-.index .section1_index .sub_menu ul li {
+.index .section1 .sub_menu ul li {
     width: 130px;
     text-align: center;
 }
 
-.index .section1_index .sub_menu ul .box {
+.index .section1 .sub_menu ul .box {
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
 }
 
-.index .section1_index .sub_menu ul .box p {
+.index .section1 .sub_menu ul .box p {
     margin: 0;
     font-size: 25px;
 }
 
-.index .section1_index .content1_sec1 {
+.index .section1 .content1_sec1 {
     margin-top: 120px;
 }
 
-.index .section1_index .content1_sec1 .title h2 {
+.index .section1 .content1_sec1 .title h2 {
     color: black;
     font-size: 40px;
     letter-spacing: 5px;
 }
 
-.index .section1_index .content1_sec1 .text {
+.index .section1 .content1_sec1 .text {
     margin-top: 40px;
     text-align: center;
     width: 75%;
@@ -157,24 +157,23 @@ a.desc:after {
     margin-right: auto;
 }
 
-.index .section1_index .content2_sec1{
+.index .section1 .content2_sec1 {
     margin-top: 130px;
 }
 
-.index .section1_index .content2_sec1 i {
+.index .section1 .content2_sec1 i {
     font-size: 60px;
     text-align: center;
 }
 
-.index .section1_index .content2_sec1 p {
+.index .section1 .content2_sec1 p {
     padding-top: 10px;
 }
 /* -- section_1 INDEX -- */
 
-
 /* -- section_2 INDEX -- */
 
-.index .section2_index {
+.index .section2 {
     height: 400px;
     background-color: #38373b;
     display: flex;
@@ -182,32 +181,173 @@ a.desc:after {
     color: white !important;
 }
 
-.index .section2_index .title h2{
+.index .section2 .title h2 {
     font-size: 35px;
 }
 
-.index .section2_index .text p{
+.index .section2 .text p {
     font-size: 14px;
     padding-top: 15px;
     color: rgb(219, 219, 219);
 }
 
-.index .section2_index .code_language{
+.index .section2 .code_language {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-.index .section2_index .code_language .code_icon{
+.index .section2 .code_language .code_icon {
     width: 100px;
     padding: 15px;
 }
 
-.index .section2_index .code_language .code_icon:hover{
+.index .section2 .code_language .code_icon:hover {
     background-color: white;
     border-radius: 20%;
     transition: 2s;
 }
+/* -- section_2 INDEX -- */
 
+/* -- section_3 INDEX -- */
+
+.index .section3 {
+    margin-top: 100px;
+    height: 400px;
+}
+
+.index .section3 #carousel_testimonials .container > div {
+    display: grid;
+    justify-content: center;
+}
+
+.index .section3 #carousel_testimonials .container > div {
+    display: flex;
+}
+
+.index .section3 #carousel_testimonials .content_testimonial .author img {
+    border-radius: 50%;
+}
+
+.index .section3 #carousel_testimonials .content_testimonial .text {
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #212529;
+    text-align: center;
+}
+
+.index .section3 #carousel_testimonials .content_testimonial .by {
+    font-size: 13px;
+    color: #4c5053;
+    letter-spacing: 2px;
+}
+
+.index .section3 .carousel-indicators {
+    margin: 0;
+    margin-top: 20px;
+    bottom: unset !important;
+}
+
+.index .section3 .carousel-indicators [data-bs-target] {
+    background-color: #313131;
+}
+/* -- section_3 INDEX -- */
+
+/* -- section_4 INDEX -- */
+.index .section4 {
+    background-color: #ececec;
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.index .section4 > .container {
+    display: grid;
+    justify-content: center;
+}
+
+.index .section4 .container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.index .section4 .title h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.index .section4 .filter {
+    margin-top: 50px;
+}
+
+.index .section4 .gallery {
+    margin-top: 30px;
+}
+
+.index .section4 .gallery .recent_job {
+    display: flex;
+    justify-content: center;
+}
+
+.index .section4 .gallery .job_img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.index .section4 .gallery .job_img img {
+    border-radius: 5px;
+}
+
+/* -- section_4 INDEX -- */
+
+/* -- section_5 INDEX -- */
+.index .section5 {
+    padding-top: 130px;
+}
+
+.index .section5 .col {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.index .section5 .image img {
+    border-radius: 50%;
+}
+
+/* -- section_5 INDEX -- */
+
+.about .background_menu{
+    background-color: #0E5C69;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .background_menu h2{
+    font-size: 70px;
+    color: white;
+}
+
+.about .background_menu ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent !important;
+}
+
+.about .background_menu ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: white;
+    content: ">\00a0";
+}
+
+.about ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.about ul.breadcrumb li a:hover {
+    
+  }

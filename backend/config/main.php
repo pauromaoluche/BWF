@@ -1,11 +1,15 @@
 <?php
+
+use yii\web\Request;
+
+$urlManager = require(__DIR__ . '/url-manager.php');
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
     require __DIR__ . '/params.php',
     require __DIR__ . '/params-local.php'
 );
-
+$baseUrl = str_replace('/backend/web', '', (new Request)->getBaseUrl());
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
@@ -14,6 +18,7 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
+            'baseUrl' => $baseUrl . '/admin',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -37,14 +42,13 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+            'rules' => [],
         ],
-        */
+
     ],
     'params' => $params,
 ];
