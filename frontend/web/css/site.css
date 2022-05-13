@@ -1,8 +1,8 @@
-main > .content {
+main>.content {
     height: 100%;
 }
 
-main > .container {
+main>.container {
     padding: 70px 15px 20px;
 }
 
@@ -12,7 +12,7 @@ main > .container {
     height: 60px;
 }
 
-.footer > .container {
+.footer>.container {
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -22,7 +22,9 @@ main > .container {
     font-style: italic;
 }
 
+
 /* add sorting icons to gridview sort links */
+
 a.asc:after,
 a.desc:after {
     content: "";
@@ -69,14 +71,16 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
+
 /* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
+
+.nav li>form>button.logout {
     padding-top: 7px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 767px) {
-    .nav li > form > button.logout {
+    .nav li>form>button.logout {
         display: block;
         text-align: left;
         width: 100%;
@@ -84,19 +88,22 @@ a.desc:after {
     }
 }
 
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
 }
 
-.nav > li > form > button.logout:focus {
+.nav>li>form>button.logout:focus {
     outline: none;
 }
 
+
 /* Edit by dev Pauluci */
 
+
 /* -- section_1 INDEX -- */
+
 .index .background_menu {
     width: 100%;
     height: 600px;
@@ -109,6 +116,7 @@ a.desc:after {
     padding-top: 40px;
     /* background-color: #f4f4f4; */
     background-color: #ececec;
+    /* background-color: #242424; */
     padding-bottom: 100px;
 }
 
@@ -169,7 +177,10 @@ a.desc:after {
 .index .section1 .content2_sec1 p {
     padding-top: 10px;
 }
+
+
 /* -- section_1 INDEX -- */
+
 
 /* -- section_2 INDEX -- */
 
@@ -207,7 +218,10 @@ a.desc:after {
     border-radius: 20%;
     transition: 2s;
 }
+
+
 /* -- section_2 INDEX -- */
+
 
 /* -- section_3 INDEX -- */
 
@@ -216,12 +230,12 @@ a.desc:after {
     height: 400px;
 }
 
-.index .section3 #carousel_testimonials .container > div {
+.index .section3 #carousel_testimonials .container>div {
     display: grid;
     justify-content: center;
 }
 
-.index .section3 #carousel_testimonials .container > div {
+.index .section3 #carousel_testimonials .container>div {
     display: flex;
 }
 
@@ -252,21 +266,25 @@ a.desc:after {
 .index .section3 .carousel-indicators [data-bs-target] {
     background-color: #313131;
 }
+
+
 /* -- section_3 INDEX -- */
 
+
 /* -- section_4 INDEX -- */
+
 .index .section4 {
     background-color: #ececec;
     padding-top: 130px;
     padding-bottom: 80px;
 }
 
-.index .section4 > .container {
+.index .section4>.container {
     display: grid;
     justify-content: center;
 }
 
-.index .section4 .container > div {
+.index .section4 .container>div {
     display: flex;
     justify-content: center;
 }
@@ -298,9 +316,12 @@ a.desc:after {
     border-radius: 5px;
 }
 
+
 /* -- section_4 INDEX -- */
 
+
 /* -- section_5 INDEX -- */
+
 .index .section5 {
     padding-top: 130px;
 }
@@ -315,39 +336,246 @@ a.desc:after {
     border-radius: 50%;
 }
 
+
 /* -- section_5 INDEX -- */
 
-.about .background_menu{
-    background-color: #0E5C69;
+.about .background_menu,
+.contact .background_menu {
+    background-color: #0e5c69;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.about .background_menu h2{
+.about .background_menu h2,
+.contact .background_menu h2 {
     font-size: 70px;
     color: white;
 }
 
-.about .background_menu ul.breadcrumb {
+.about .background_menu ul.breadcrumb,
+.contact .background_menu ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: transparent !important;
+    color: white;
 }
 
-.about .background_menu ul.breadcrumb li + li:before {
+.about .background_menu ul.breadcrumb li+li:before,
+.contact .background_menu ul.breadcrumb li+li:before {
     padding: 8px;
     color: white;
     content: ">\00a0";
 }
 
-.about ul.breadcrumb li a {
+.about ul.breadcrumb li a,
+.contact ul.breadcrumb li a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-.about ul.breadcrumb li a:hover {
-    
-  }
+.about .section1 {
+    margin-top: 100px;
+}
+
+.about .section1 .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about .section1 .titlte-text.right {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.about .section1 .titlte-text.left {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.about .section1 .text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.teste {
+    height: 100vh;
+    background: rgb(1, 18, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-load {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+}
+
+.loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(4, 28, 43);
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgba(19, 120, 184, 0.6));
+    background-size: 100px 180px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(29, 153, 230);
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(29, 153, 230), 0 0 20px rgb(29, 153, 230), 0 0 30px rgb(29, 153, 230), 0 0 40px rgb(29, 153, 230), 0 0 50px rgb(29, 153, 230), 0 0 60px rgb(29, 153, 230), 0 0 60px rgb(29, 153, 230), 0 0 70px rgb(29, 153, 230), 0 0 80px rgb(29, 153, 230), 0 0 90px rgb(29, 153, 230), 0 0 100px rgb(29, 153, 230);
+}
+
+.loader span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(1, 18, 29);
+    border-radius: 50%;
+}
+
+.index .section1 li p {
+    color: #13b7d4;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.index .section1 li p:hover {
+    color: #050801;
+    background: #10879c;
+    box-shadow: 0 0 5px #10879c, 0 0 25px #10879c;
+}
+
+.index .section1 li p span {
+    position: absolute;
+    display: block;
+}
+
+.index .section1 li p span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #10879c);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.index .section1 li p span:nth-child(2) {
+    top: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #10879c);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.index .section1 li p span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #10879c);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.index .section1 li p span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #10879c);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.contact .section1 {
+    margin-top: 100px;
+}
