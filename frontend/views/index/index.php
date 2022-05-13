@@ -8,6 +8,109 @@
             <nav class="sub_menu">
                 <ul>
                     <li>
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Manutenção
+                        </p>
+                    </li>
+                    <li>
+
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Desenvolvimento
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Configuração
+                        </p>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p>BWF</p>
+                            <small>Soluções em t.i</small>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Suporte Tecnico
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Administração
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Design
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="content1_sec1">
+                <div class="title text-center">
+                    <h2>
+                        We design digital products
+                    </h2>
+                </div>
+                <div class="text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+            </div>
+            <div class="content2_sec1">
+                <div class="container">
+                    <nav class="sub_menu">
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <p>Idea</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                <p>Design</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-brain"></i>
+                                <p>development</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-gear"></i>
+                                <p>settings</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-none">
+            <nav class="sub_menu">
+                <ul>
+                    <li>
                         <p>Manutenção</p>
                     </li>
                     <li>
