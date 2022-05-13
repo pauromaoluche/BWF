@@ -18,6 +18,7 @@ use yii\web\IdentityInterface;
  * @property string $verification_token
  * @property string $email
  * @property string $auth_key
+ * @property string $access_token
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
@@ -25,10 +26,9 @@ use yii\web\IdentityInterface;
  */
 class User extends ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
+    const STATUS_DELETED = '0';
     const STATUS_INACTIVE = 9;
-    const STATUS_ACTIVE = 10;
-
+    const STATUS_ACTIVE = '1';
 
     /**
      * {@inheritdoc}
@@ -54,7 +54,7 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_INACTIVE],
+            ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
         ];
     }
@@ -83,7 +83,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findByUsername($username)
     {
-        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
     }
 
     /**
@@ -166,7 +166,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function validatePassword($password)
     {
-        return Yii::$app->security->validatePassword($password, $this->password_hash);
+        return Yii::$app->security->validatePassword($password, $this->password);
     }
 
     /**
@@ -176,7 +176,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function setPassword($password)
     {
-        $this->password_hash = Yii::$app->security->generatePasswordHash($password);
+        $this->password = Yii::$app->security->generatePasswordHash($password);
+
     }
 
     /**
@@ -202,6 +203,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->verification_token = Yii::$app->security->generateRandomString() . '_' . time();
     }
+    
 
     /**
      * Removes password reset token

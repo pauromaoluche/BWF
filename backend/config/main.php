@@ -24,6 +24,7 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['login'],
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [
@@ -51,4 +52,5 @@ return [
 
     ],
     'params' => $params,
+    'defaultRoute' => 'index',
 ];
