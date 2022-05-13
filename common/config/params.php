@@ -6,4 +6,6 @@ return [
     'senderName' => 'Example.com mailer',
     'user.passwordResetTokenExpire' => 3600,
     'user.passwordMinLength' => 8,
+    // chave secreta gerada junto com a senha
+    'secretkey' => 'bmV3ZXJ0b24=',
 ];
