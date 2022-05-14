@@ -502,4 +502,50 @@ $(document).ready(function() {
             </div>
         </div>
     </section>
+
+    <section class="section7">
+        <div class="container">
+            <div class="title">
+                <h2>Se informe no nosso <span>Blog</span></h2>
+                <p>Artigos <span>Em Destaques</span></p>
+            </div>
+            <div class="blog">
+                <div class="row">
+                <div class="col-lg-4">
+                        <div class="last-post">
+                            <div class="image">
+                                <img src="https://picsum.photos/300/150">
+                            </div>
+                            <div class="title">
+                                <h3>Titulo da noticia</h3>
+                            </div>
+                            <a href="#">Ler mais>></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="last-post">
+                            <div class="image">
+                                <img src="https://picsum.photos/300/150">
+                            </div>
+                            <div class="title">
+                                <h3>Titulo da noticia</h3>
+                            </div>
+                            <a href="#">Ler mais>></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="last-post">
+                            <div class="image">
+                                <img src="https://picsum.photos/300/150">
+                            </div>
+                            <div class="title">
+                                <h3>Titulo da noticia</h3>
+                            </div>
+                            <a href="#">Ler mais>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

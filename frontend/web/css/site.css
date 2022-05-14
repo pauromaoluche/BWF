@@ -581,7 +581,8 @@ a.desc:after {
     margin-top: 100px;
 }
 
-.index .section6 {
+.index .section6,
+.index .section7 {
     margin-top: 100px;
     text-align: center;
 }
@@ -616,4 +617,34 @@ a.desc:after {
 
 .index .section6 .functions .card .text {
     font-size: 13px;
+}
+
+.index .section7 .title h2 {
+    font-size: 15px;
+}
+
+.index .section7 .title p {
+    font-size: 35px;
+}
+
+.index .section7 .title p span {
+    font-weight: bold;
+    color: #10879c;
+}
+
+.index .section7 .last-post img {
+    border-radius: 10px;
+}
+
+.index .section7 .last-post .title {
+    margin-top: 10px;
+}
+
+.index .section7 .last-post .title h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.index .section7 .last-post {
+    color: #10879c;
 }
