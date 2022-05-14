@@ -300,6 +300,7 @@ a.desc:after {
 
 .index .section4 .gallery {
     margin-top: 30px;
+    min-height: 300px;
 }
 
 .index .section4 .gallery .recent_job {
@@ -578,4 +579,41 @@ a.desc:after {
 
 .contact .section1 {
     margin-top: 100px;
+}
+
+.index .section6 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.index .section6 .title {
+    margin-bottom: 60px;
+}
+
+.index .section6 .functions .card {
+    border: none;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.index .section6 .functions .card .title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.index .section6 .functions .card .title h3 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #10879c;
+}
+
+.index .section6 .functions .card .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.index .section6 .functions .card .text {
+    font-size: 13px;
 }

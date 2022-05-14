@@ -1,3 +1,30 @@
+<? 
+
+$this->registerJs('
+$(document).ready(function() {
+    $(".filter .recent_job").click(function() {
+        $(this).addClass("active").siblings().removeClass("active")
+        $(".jobs").fadeOut()
+        setTimeout(function() {
+            $(".jobs").fadeIn()
+        }, 300)
+
+        let value = $(this).attr("data-filter")
+
+        setTimeout(function() {
+            if (value === "todos") {
+                $(".jobs .recent_job").show("200")
+            } else {
+                $(".jobs .recent_job").not("." + value).hide("200")
+                $(".jobs .recent_job").filter("." + value).show("200")
+            }
+        }, 350)
+    })
+})
+')
+
+
+?>
 <div class="index">
     <div>
         <div class="background_menu" style="background: url('/images/site/LANDING.jpg');">
@@ -292,42 +319,42 @@
                 <h2>Recents Works</h2>
             </div>
             <div class="filter">
-                <button type="button" class="btn btn-outline-dark">VueJs</button>
-                <button type="button" class="btn btn-outline-dark">React Native</button>
-                <button type="button" class="btn btn-outline-dark">Wordpress</button>
-                <button type="button" class="btn btn-outline-dark">OpenCart</button>
-                <button type="button" class="btn btn-outline-dark">Joomla</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="todos" type="button" >Todos</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="react-native" type="button" >React Native</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="wordpress" type="button" >Wordpress</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="opencart" type="button" >OpenCart</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="yii2" type="button" >yii2</button>
             </div>
         </div>
         <div class="gallery">
-            <div class="container">
+            <div class="container jobs">
                 <dic class="row">
-                    <div class="col-4 recent_job">
+                    <div class="col-4 recent_job react-native">
+                        <div class="job_img">
+                            <img class="img-fluid wordpress" src="https://picsum.photos/400/200" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 recent_job wordpress">
                         <div class="job_img">
                             <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
                         </div>
                     </div>
-                    <div class="col-4 recent_job">
+                    <div class="col-4 recent_job react-native">
                         <div class="job_img">
                             <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
                         </div>
                     </div>
-                    <div class="col-4 recent_job">
+                    <div class="col-4 recent_job opencart">
                         <div class="job_img">
                             <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
                         </div>
                     </div>
-                    <div class="col-4 recent_job">
+                    <div class="col-4 recent_job yii2">
                         <div class="job_img">
                             <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
                         </div>
                     </div>
-                    <div class="col-4 recent_job">
-                        <div class="job_img">
-                            <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4 recent_job">
+                    <div class="col-4 recent_job yii2">
                         <div class="job_img">
                             <img class="img-fluid" src="https://picsum.photos/400/200" alt="">
                         </div>
@@ -381,6 +408,97 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="container">
+            <div class="title">
+                <h2><span>Funcionalidades </span> dos sites</h2>
+            </div>
+            <div class="row functions">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3879/3879707.png" class="img-fluid">
+                        </div>
+                        <div class="title">
+                            <h3>Site Responsivo</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons.flaticon.com/png/512/4365/premium/4365227.png?token=exp=1652538526~hmac=5f6b53f9efb27af9e6a51ef912cfa97f">
+                        </div>
+                        <div class="title">
+                            <h3>Tecnologia de ponta</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/512/7200/7200600.png">
+                        </div>
+                        <div class="title">
+                            <h3>Treinamento de uso</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons.flaticon.com/png/512/4480/premium/4480421.png?token=exp=1652537129~hmac=6ad60c90788e9c1aa03988af9efddc3c">
+                        </div>
+                        <div class="title">
+                            <h3>Suporte contínuo</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2329/2329083.png">
+                        </div>
+                        <div class="title">
+                            <h3>Facil gerenciamento</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://cdn-icons.flaticon.com/png/512/4480/premium/4480421.png?token=exp=1652538582~hmac=32877ff8413d8dba57e28e2586193153">
+                        </div>
+                        <div class="title">
+                            <h3>Ferramentas de venda</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn btn-primary btn-lg">Pedir orçamento</button>
             </div>
         </div>
     </section>
