@@ -25,6 +25,12 @@ use yii\helpers\Inflector;
  */
 class PageInformation extends \yii\db\ActiveRecord
 {
+
+    /**
+     * @var string
+     */
+    public $className = 'PageInformation';
+
     /**
      * {@inheritdoc}
      */

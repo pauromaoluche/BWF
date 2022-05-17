@@ -16,10 +16,11 @@ class LoginController extends Controller
 {
     public function actionIndex()
     {
+        $this->layout = 'blank';
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             self::createCookieCKFinder();
-            return $this->redirect(['index']);
+            return $this->redirect(['/index']);
         } else {
             return $this->render('index', [
                 'model' => $model,
@@ -29,6 +30,7 @@ class LoginController extends Controller
 
     public function actionSignup()
     {
+        $this->layout = 'blank';
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             return Yii::$app->user->loginRequired();

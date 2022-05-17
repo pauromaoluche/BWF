@@ -1,1 +1,3 @@
-<h1>teset</h1>
+<?php 
+use backend\widgets\WConfig;
+?>
