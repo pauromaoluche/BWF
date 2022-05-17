@@ -20,7 +20,7 @@
                     <a class="nav-link" href="#">Configuração</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sair</a>
+                    <a class="nav-link" href="/admin/logout">Sair</a>
                 </li>
             </ul>
         </div>
