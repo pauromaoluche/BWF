@@ -5,12 +5,12 @@
 
 use backend\assets\AppAsset;
 use common\widgets\Alert;
-use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use backend\widgets\Navigation;
 use backend\widgets\Header;
+use yii\widgets\Breadcrumbs;
 
 AppAsset::register($this);
 ?>
@@ -66,9 +66,26 @@ AppAsset::register($this);
         <div id="content">
             <header>
                 <?= Header::widget(); ?>
+                <?php if (isset($this->params['breadcrumbs'])) : ?>
+                    <div>
+                        <div class="col-lg-12">
+                            <h2><?= isset($this->params['breadcrumbs'][0]['label']) ? $this->params['breadcrumbs'][0]['label'] : $this->params['breadcrumbs'][0]; ?></h2>
+                            <?=
+                            Breadcrumbs::widget([
+                                'tag' => 'ol',
+                                'homeLink' => ['label' => Yii::t('backend', 'Home'), 'url' => url('index')],
+                                'itemTemplate' => "<li class=\"breadcrumb-item\">{link}</li>\n",
+                                'activeItemTemplate' => "<li class=\"breadcrumb-item active\"><strong>{link}</strong></li>\n",
+                                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                                'options' => ['class' => 'breadcrumb'],
+                            ])
+                            ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
             </header>
             <main id="main">
-            <?= $content ?>
+                <?= $content ?>
             </main>
 
             <footer class="footer mt-auto py-3 text-muted">

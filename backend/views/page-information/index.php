@@ -12,13 +12,12 @@ use common\helpers\Helpers;
 /* @var $searchModel common\models\search\PageInformationSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('backend', 'Page Informations');
+$this->title = Yii::t('backend', 'Paginas Informativas');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="page-information-index">
-    <h1><?= Html::encode($this->title) ?></h1>
     <p>
-        <?= Html::a(Yii::t('backend', 'Create Page Information'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('backend', 'Adicionar'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); 

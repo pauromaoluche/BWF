@@ -71,11 +71,16 @@ a:focus {
     align-items: stretch;
 }
 
+.row.wrapper.border-bottom.white-bg.page-heading {
+    padding: 10px 20px;
+}
+
 #sidebar {
     overflow: hidden;
     min-width: 220px;
     max-width: 250px;
-    background: #353535;
+    background: #072e3e;
+    /* background: #353535; */
     color: #fff;
     transition: all 0.3s;
 }
