@@ -94,8 +94,6 @@ $(document).ready(function() {
                     </li>
                 </ul>
             </nav>
-
-            <? foreach ($content_index as $index) : ?>
                 <div class="content1_sec1">
                     <div class="title text-center">
                         <h2>
@@ -108,7 +106,6 @@ $(document).ready(function() {
                         </p>
                     </div>
                 </div>
-            <? endforeach; ?>
             <div class="content2_sec1">
                 <div class="container">
                     <nav class="sub_menu">
