@@ -5,6 +5,7 @@ use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use common\models\Config;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\search\ConfigSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */

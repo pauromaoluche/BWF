@@ -25,10 +25,10 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'sort')->textInput() ?>
 
     <?= $form->field($model, 'type')->dropDownList([ '0', '1', '2', ], ['prompt' => '']) ?>
-
+<!-- 
     <?= $form->field($model, 'created_at')->textInput() ?>
 
-    <?= $form->field($model, 'updated_at')->textInput() ?>
+    <?= $form->field($model, 'updated_at')->textInput() ?> -->
 
     <?= $form->field($model, 'status')->dropDownList([ '0', '1', ], ['prompt' => '']) ?>
 
