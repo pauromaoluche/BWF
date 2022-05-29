@@ -1,5 +1,4 @@
-<? 
-
+<?
 $this->registerJs('
 $(document).ready(function() {
     $(".filter .recent_job").click(function() {
@@ -21,9 +20,7 @@ $(document).ready(function() {
         }, 350)
     })
 })
-')
-
-
+');
 ?>
 <div class="index">
     <div>
@@ -98,16 +95,20 @@ $(document).ready(function() {
                 </ul>
             </nav>
 
-            <div class="content1_sec1">
-                <div class="title text-center">
-                    <h2>
+            <? foreach ($content_index as $index) : ?>
+                <div class="content1_sec1">
+                    <div class="title text-center">
+                        <h2>
                         We design digital products
-                    </h2>
+                        </h2>
+                    </div>
+                    <div class="text">
+                        <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-            </div>
+            <? endforeach; ?>
             <div class="content2_sec1">
                 <div class="container">
                     <nav class="sub_menu">
@@ -319,11 +320,11 @@ $(document).ready(function() {
                 <h2>Recents Works</h2>
             </div>
             <div class="filter">
-                <button class="recent_job btn btn-outline-dark" data-filter="todos" type="button" >Todos</button>
-                <button class="recent_job btn btn-outline-dark" data-filter="react-native" type="button" >React Native</button>
-                <button class="recent_job btn btn-outline-dark" data-filter="wordpress" type="button" >Wordpress</button>
-                <button class="recent_job btn btn-outline-dark" data-filter="opencart" type="button" >OpenCart</button>
-                <button class="recent_job btn btn-outline-dark" data-filter="yii2" type="button" >yii2</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="todos" type="button">Todos</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="react-native" type="button">React Native</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="wordpress" type="button">Wordpress</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="opencart" type="button">OpenCart</button>
+                <button class="recent_job btn btn-outline-dark" data-filter="yii2" type="button">yii2</button>
             </div>
         </div>
         <div class="gallery">
@@ -511,7 +512,7 @@ $(document).ready(function() {
             </div>
             <div class="blog">
                 <div class="row">
-                <div class="col-lg-4">
+                    <div class="col-lg-4">
                         <div class="last-post">
                             <div class="image">
                                 <img src="https://picsum.photos/300/150">
